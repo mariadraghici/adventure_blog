@@ -1,0 +1,315 @@
+.jumbotron{
+    padding-top: 0px;
+    background-color: #CB906D;
+    height: 100%;
+}
+.navbar-travel{
+    top: 1%;
+    background-color: #CB906D ;
+    border: #CB906D;
+}
+.space-travel{
+    color:white !important;
+   /* font-family: Montserrat;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
+*{
+           /* font-family: Montserrat;*/
+           font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+.travel-search{
+    background-color: #CB906D !important;
+    padding-top: 10em;
+}
+#navbarSupportedContent,#navbarSupportedContent-Travel{
+    background-color: #CB906D !important;
+}
+.second-back-travel{
+ /* background-color: red;*/
+}
+.text-down{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+
+}
+.scene-container {
+    width: 600px;
+height: 600px;
+top: -10em;
+right: -9em;
+}
+
+@media only screen and (max-width: 1200px) {
+.scene-container {
+display: none;
+}
+}
+.secondback-travel{
+padding:100px ;
+background-color: #35343E;
+border-radius:30px ;
+}
+
+body{
+background-color: #CB906D !important;
+}
+
+.register-now-but{
+background-color:#35343E !important;
+}
+button.btn.btn-primary.btn-sm.register-now-but {
+    width: 151px;
+    border-radius: 15px;
+}
+
+.move-right-div{
+    margin-left:6em;
+}
+.rectangle-back-num1{
+    margin-right: 1em;
+    background-image: url("../img/rectangles/Rectangle13.png");
+}
+.rectangle-back-num1,.rectangle-back-num2 {
+    width: 177px;
+    background-image: url(../img/rectangles/Rectangle13.png);
+    height: 175px;
+    z-index: 12;
+}
+
+.rectangle-back-num2{
+    margin-left: 1em;
+    background-image: url("../img/rectangles/Rectangle7.png");
+}
+.adventures-design{
+    z-index: 2;
+}
+
+.rectangle-back-num1, .rectangle-back-num2 {
+    width: 177px;
+    background-image: url(../img/rectangles/Rectangle13.png);
+    height: 175px;
+    z-index: 12;
+    margin-top: -15em;
+   
+}
+
+.rectangle-back-num1 {
+    margin-top: -14.5em;
+    margin-left: -1em;
+    width: 7em;
+}
+
+.rectangle-back-num2 {
+    width: 7em;
+    margin-left: 4em;
+}
+.img-fluid {
+    max-width: 10em !important;
+}
+
+.row.col-12.move-down-adventure {
+    margin-top: 5em;
+}
+
+.adventureous-about-us{
+    margin-top:4em;
+}
+
+
+.adventure-card-content{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF !important;
+}
+.adventure-card-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF !important;
+
+}
+.adventure-card {
+    background: #9CB47C;
+  
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
+    padding: 19px;
+    margin-right: -9em;
+    padding-bottom: 5em;
+}
+
+.adventure-card-content {
+    margin-top: 1em;
+    text-align: left;
+}
+
+img.adventures-image-girl {
+    margin-top: 3em;
+    margin-left: 6em;
+}
+
+.text-login-page {
+    width: 100%;
+}
+.text-login-page {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.adventure-card-log-in-title {
+    text-align: center;
+}
+.adventure-card-login{
+background-color: #35343E !important;
+}
+.adventure-login-content{
+    margin-left: 6em !important;
+    margin-top: 6em !important;
+    margin-bottom: 6em !important;
+}
+
+.adventure-card.adventure-card-login {
+    height: 35em;
+    width: 20em;
+}
+
+.adventure-card-footer {
+    margin-top: 2em;
+}
+.sign-up {
+    margin-top: 1em;
+    width: 3.5em;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.adventure-login-button{
+    border: 1px white solid !important;
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
+.adventure-card.adventure-login-card-black {
+    background: #35343E !important;
+    width: 12em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 23px; */
+    line-height: 28px;
+    color: #FFFFFF;
+    height: 8em;
+}
+
+.adventure-card.adventure-login-card {
+    margin-left: 13em;
+    margin-right: 0em;
+    margin-top: 14em;
+}
+
+.adventure-card.adventure-login-card-black {
+    margin-left: 19em;
+    margin-top: -5em;
+    width: 19em;
+    height: 12em;
+}
+.adventure-card-title-black {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 44px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .rectangle-back-num1,.rectangle-back-num2{
+        display: none;
+    }
+    img.img-fluid.adventures-design {
+        margin-left: 6em;
+        margin-bottom: 1em;
+        width: 15em !important;
+        max-width: 20em !important;
+    }
+    .adventure-card.adventure-login-card {
+        margin-left: 6em;
+        margin-right: 0em;
+        margin-top: 0em;
+    }
+    .adventure-card.adventure-login-card-black {
+        margin-left: 19em;
+        margin-top: -5em;
+        width: 19em;
+        height: 12em;
+        margin-bottom: 11em;
+    }
+    img.adventures-image-girl {
+        margin-top: 0em; 
+        width: 94%;
+         margin-left: 0em;
+    }
+    .adventure-card {
+        height: 12em;
+        background: #9CB47C;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
+        padding: 19px;
+         margin-right: 0em;
+  }
+}
+
+  @media only screen and (max-width: 750px) {
+    .rectangle-back-num1,.rectangle-back-num2{
+        display: none;
+    }
+
+        img.img-fluid.adventures-design {
+            margin-left: 6em;
+            margin-bottom: 1em;
+            width: 22em !important;
+            max-width: 20em !important;
+        }
+        .adventure-card.adventure-login-card {
+            margin-left: 6em;
+            margin-right: 0em;
+            margin-top: 0em;
+        }
+        .adventure-card.adventure-login-card-black {
+            margin-left: 0em;
+            margin-top: -5em;
+            width: 19em;
+            height: 12em;
+            margin-bottom: 11em;
+        }
+        img.adventures-image-girl {
+            margin-top: -4em;
+            width: 68%;
+            margin-left: 5em;
+        }
+        .adventure-card {
+            height: 17em;
+            background: #9CB47C;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
+            padding: 19px;
+            margin-right: 0em;
+        }
+  }

@@ -1,0 +1,323 @@
+<!-- Latest compiled and minified CSS -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<!-- CSS only -->
+<link href="../static/css/home.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+<!-- jQuery library -->
+<script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+<script src="../static/cdns/react-dom.production.min.js"></script>
+<script src="../static/cdns/babel.js"></script>
+<script src="../static/cdns/d3-dsv.min.js"></script>
+<script src="../static/cdns/index-array-by.min.js"></script>
+<script src="../static/cdns/react-globe.min.js"></script>
+
+<header>
+
+
+
+  
+  <nav class="navbar navbar-expand-lg navbar-light " id="navbarSupportedContent-Travel">
+    <a class="navbar-brand space-travel" href="#"><img src="../static/img/Logo.png"/>Travel with us</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  
+    <div class="collapse navbar-collapse me-auto  float-end" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link  space-travel" href="#">Discover </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link  space-travel" href="#">Log in </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  space-travel" href="#">About us </a>
+          </li>
+           
+
+      </ul>
+
+    </div>
+  </nav>
+  </header>
+
+<div class="jumbotron">
+    
+    <div class="travel-search">
+ 
+    </div>
+    <div class="container second-back-travel">
+      <div class="row col-xl-12">
+        
+        <div class="col-xl-4">
+          <h2>Find your next journey</h2>
+        <p class="text-down">Choose from our unlimited routes, explore new destinations and post your trip.</p>   
+          <button class="btn btn-primary btn-sm register-now-but">Register now</button>
+      </div>
+        <div class="col-xl-8">
+      
+          
+
+          <div id="globeViz"></div>
+       
+        
+          
+         
+        
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid secondback-travel">
+    <div class="row col-12">
+      
+      <div class="col-lg-4 col-md-8 ">
+        <div class="move-right-div">
+        <h2>NEVER STOP EXPLORING THE WORLD.</h2>
+      <p class="text-down">Discover new stunning places with our adventureous routes. </p>   
+        </div>
+    </div>
+      <div class="col-lg-8 col-md-4"></div>
+
+    </div>
+
+    <div class="row col-12 move-down-adventure">
+      
+      <div class="col-lg-1 ">
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 ">
+             
+              <img src="../static/img/82561.png" class="img-fluid adventures-design"/>
+              <div class="rectangle-back-num1"></div>
+            </div>
+            <div class="col-lg-2  col-md-6  col-sm-12">
+              <img src="../static/img/image1.png" class="img-fluid adventures-design"/>
+            </div>
+            <div class="col-lg-2  col-md-6  col-sm-12">
+              <img src="../static/img/image2.png" class="img-fluid adventures-design"/>
+            </div>
+            <div class="col-lg-2  col-md-6  col-sm-12">
+              <img src="../static/img/image3.png" class="img-fluid adventures-design"/>
+            </div>
+            <div class="col-lg-2  col-md-6  col-sm-12">
+             
+              <img src="../static/img/image4.png" class="img-fluid adventures-design"/>
+              <div class="rectangle-back-num2"></div>
+            </div>
+      <div class="col-lg-1">
+
+        
+      </div>
+
+    </div>
+
+    <div class="row col-12 move-down-adventure">
+      
+      <div class="col-lg-2 ">
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 ">
+              <div class="adventure-card">
+                  <div class="adventure-card-title ">
+                      SHARE YOUR EXPERIENCES
+                  </div>
+                  <div class="adventure-card-content">
+                      Post your stories and share them with our community
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-2  col-md-6  col-sm-12">
+              <img src="../static/img/image5.png" class="adventures-image-girl "/>
+            </div>
+      <div class="col-lg-2">
+
+        
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="container-fluid second-back-travel">
+    <div class="row col-12">
+      
+      <div class="col-lg-4 col-md-8">
+        <div class="move-right-div adventure-login-content">
+          <div class="adventure-card adventure-card-login">
+            <div class="adventure-card-title adventure-card-log-in-title">
+              <img src="../static/img/pictureUser.png"/><br/>
+                Log in
+            </div>
+            <div class="adventure-card-content">
+              <div class="input-group">
+                <div class="text-login-page">Email</div>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+              </div>
+              <div class="input-group">
+                <div class="text-login-page">Password</div>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+              </div>
+              <button class="navbar-toggler adventure-login-button" type="button" >Log in</button>
+              <div class="adventure-card-footer">
+                Don't have an account?
+                <div class="sign-up">Sign Up</div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-6 col-sm-12 ">
+      <div class="adventure-card adventure-login-card">
+          <div class="adventure-card-title ">
+              JOIN THE COMMUNITY!
+          </div>
+          <div class="adventure-card-content  adventure-login-card-content">
+              
+          </div>
+      </div>
+
+      <div class="adventure-card adventure-login-card-black">
+        <div class="adventure-card-title-black ">
+          Post your journey and discover unlimited routes.
+        </div>
+        <div class="adventure-card-content  adventure-login-card-content">
+            
+        </div>
+    </div>
+    </div>
+
+
+
+    
+
+    </div>
+
+    <div class="row col-12">
+      
+      <div class="col-1">
+            </div>
+        
+
+    </div>
+  </div>
+
+
+  <div class="container-fluid secondback-travel">
+    <div class="row col-12">
+      
+      <div class="col-6">
+        <div class="move-right-div">
+              <h2>About us</h2>
+              <p class="text-down adventureous-about-us">We created this website to help you find a suitable journey for you and to share experiences of others. In this way we think that you can take the best out of a trip and discover all that is to discover. </p>   
+          </div>
+    </div>
+      <div class="col-8"></div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <script type="text/jsx">
+    const { useState, useEffect, useRef } = React;
+  
+    const COUNTRY = 'United States';
+    const OPACITY = 0.22;
+  
+    const airportParse = ([airportId, name, city, country, iata, icao, lat, lng, alt, timezone, dst, tz, type, source]) => ({ airportId, name, city, country, iata, icao, lat, lng, alt, timezone, dst, tz, type, source });
+    const routeParse = ([airline, airlineId, srcIata, srcAirportId, dstIata, dstAirportId, codeshare, stops, equipment]) => ({ airline, airlineId, srcIata, srcAirportId, dstIata, dstAirportId, codeshare, stops, equipment});
+  
+    const World = () => {
+      const globeEl = useRef();
+      const [airports, setAirports] = useState([]);
+      const [routes, setRoutes] = useState([]);
+  
+      useEffect(() => {
+        // load data
+        Promise.all([
+          fetch('https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat').then(res => res.text())
+            .then(d => d3.csvParseRows(d, airportParse)),
+          fetch('https://raw.githubusercontent.com/jpatokal/openflights/master/data/routes.dat').then(res => res.text())
+            .then(d => d3.csvParseRows(d, routeParse))
+        ]).then(([airports, routes]) => {
+  
+          const byIata = indexBy(airports, 'iata', false);
+  
+          const filteredRoutes = routes
+            .filter(d => byIata.hasOwnProperty(d.srcIata) && byIata.hasOwnProperty(d.dstIata)) // exclude unknown airports
+            .filter(d => d.stops === '0') // non-stop flights only
+            .map(d => Object.assign(d, {
+              srcAirport: byIata[d.srcIata],
+              dstAirport: byIata[d.dstIata]
+            }))
+            .filter(d => d.srcAirport.country === COUNTRY && d.dstAirport.country !== COUNTRY); // international routes from country
+  
+          setAirports(airports);
+          setRoutes(filteredRoutes);
+        });
+      }, []);
+  
+      useEffect(() => {
+        // aim at continental US centroid
+        globeEl.current.pointOfView({ lat: 39.6, lng: -98.5, altitude: 2 });
+      }, []);
+  
+      return <Globe
+        ref={globeEl}
+        globeImageUrl="https://unpkg.com/three-globe/example/img/earth-night.jpg"
+        width={600}
+        height={600}
+        backgroundColor={"#CB906D"}
+        arcsData={routes}
+        marginTop={100}
+        arcLabel={d => `${d.airline}: ${d.srcIata} &#8594; ${d.dstIata}`}
+        arcStartLat={d => +d.srcAirport.lat}
+        arcStartLng={d => +d.srcAirport.lng}
+        arcEndLat={d => +d.dstAirport.lat}
+        arcEndLng={d => +d.dstAirport.lng}
+        arcDashLength={0.25}
+        arcDashGap={1}
+        arcDashInitialGap={() => Math.random()}
+        arcDashAnimateTime={4000}
+        arcColor={d => [`rgba(0, 255, 0, ${OPACITY})`, `rgba(255, 0, 0, ${OPACITY})`]}
+        arcsTransitionDuration={0}
+        animateIn={true}
+        cameraRotateSpeed={100}
+        pointsData={airports}
+        pointColor={() => 'orange'}
+        pointAltitude={0}
+        pointRadius={0.02}
+        pointsMerge={true}
+      />;
+    };
+  
+    ReactDOM.render(
+      <World />,
+      document.getElementById('globeViz')
+    );
+  </script>
