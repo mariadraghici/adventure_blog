@@ -1,0 +1,162 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<link href="../static/css/profile.css" rel="stylesheet"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline"><img src="../static/img/Logo.png"/> </span>
+                </a><!--SeekAdventure-->
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item left-menu-profile">
+                        <a href="#" class="nav-link align-middle px-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">New post</span>
+                        </a>
+                    </li>
+                    <li  class="nav-item left-menu-profile">
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Find my new route</span> </a>
+                    </li>
+                    <li  class="nav-item left-menu-profile" >
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Friends</span></a>
+                    </li>
+
+
+                </ul>
+                <hr>
+
+            </div>
+        </div>
+        <div class="col py-3">
+         <div id="mapid"></div>
+
+                </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New post</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+            <div id="editorjs"></div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="../static/js/leafletMap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+<script>
+    var editor = new EditorJS({
+  holderId: "editorjs",
+  tools: {
+    /**
+     * Each Tool is a Plugin. Pass them via 'class' option with necessary settings {@link docs/tools.md}
+     */
+    header: {
+      class: Header,
+      inlineToolbar: ["link"],
+      config: {
+        placeholder: "Header"
+      },
+      shortcut: "CMD+SHIFT+H"
+    },
+
+    image: {
+      class: SimpleImage,
+      inlineToolbar: ["link"]
+    },
+
+    list: {
+      class: List,
+      inlineToolbar: true,
+      shortcut: "CMD+SHIFT+L"
+    },
+
+    linkTool: LinkTool,
+
+    embed: Embed
+  },
+  data: {
+    blocks: [
+      {
+        type: "header",
+        data: {
+          text: "Header 1",
+          level: 1
+        }
+      },
+      {
+        type: "header",
+        data: {
+          text: "Header 2",
+          level: 2
+        }
+      },
+      {
+        type: "paragraph",
+        data: {
+          text:
+            "Hey. Meet the new Editor. On this page you can see it in action — try to edit this text. Source code of the page contains the example of connection and configuration."
+        }
+      },
+
+      {
+        type: "list",
+        data: {
+          items: [
+            "It is a block-style editor",
+            "It returns clean data output in JSON",
+            "Designed to be extendable and pluggable with a simple API"
+          ],
+          style: "unordered"
+        }
+      },
+
+      {
+        type: "image",
+        data: {
+          url:
+            "https://codex.so/upload/redactor_images/o_e48549d1855c7fc1807308dd14990126.jpg",
+          caption: "Caption for the image",
+          stretched: false,
+          withBorder: true,
+          withBackground: false
+        }
+      },
+      {
+        type: "paragraph",
+        data: {
+          text:
+            "Hey. Meet the new Editor. On this page you can see it in action — try to edit this text. Source code of the page contains the example of connection and configuration."
+        }
+      }
+    ]
+  }
+});
+
+</script>

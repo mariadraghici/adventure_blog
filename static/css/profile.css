@@ -1,0 +1,16 @@
+   #mapid {
+    height: 100%;
+     margin:0px;
+     padding:0px
+     }
+    .py-3{
+        margin:0px;
+        padding:0px !important;
+    }
+    .left-menu-profile{
+        color:white !important;
+    }
+
+    span.ms-1.d-none.d-sm-inline {
+    color: white;
+}
